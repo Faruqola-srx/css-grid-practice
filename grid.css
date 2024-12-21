@@ -1,0 +1,106 @@
+body{
+    background-color: #edf2f8;
+
+}
+
+* {
+    font-size: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-left: 5%;
+}
+
+
+.container .imgandwords {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 1440px;
+}  
+
+.container .imgandwords img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.imgandwords .two .name{
+    font-size: 12px;
+}
+
+.container .words {
+    font-size: 20px;
+    margin-top:5px ;
+    margin-left: 10px;
+
+}
+
+.container .first-p {
+    margin-top: 10px;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+
+.box1,.box2,.box3,.box4,.box5 {
+    margin-top: 3%;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.box1 {
+    background-color: hsl(263,55%,52%);
+    color: #fff;
+    grid-column:1/span 2;
+    
+}
+
+
+.box2 {
+    background-color: hsl(219,29%,14%);
+    color: #998d8d;
+    
+    
+}
+
+.box5 {
+    background-color: hsl(219,29%,14%);
+    color: #998d8d;
+    grid-column: span 2;
+    
+    
+}
+
+.box3{
+    background-color: #fff;
+    grid-row: span 2;
+    
+    
+    
+}
+
+.box4{
+    background-color: #fff;
+    grid-row: 2/ 4;
+    
+
+    
+}
+
+@media (max-width:750px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    
+
+
+
+
